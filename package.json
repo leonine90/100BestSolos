@@ -1,0 +1,19 @@
+{
+  "name": "100bestsolos",
+  "version": "1.0.0",
+  "description": "A website to introduce best guitar solos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonine90/100BestSolos.git"
+  },
+  "author": "leonine90",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonine90/100BestSolos/issues"
+  },
+  "homepage": "https://github.com/leonine90/100BestSolos#readme"
+}
