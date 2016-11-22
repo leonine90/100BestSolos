@@ -1,86 +1,26 @@
 <div class="jumbotron">
 </div>
 
-<div class="row marketing music-box">
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
-        </div>
-    </div>
-    <div class="music">
-        <div class="music-content">
-            <h4>Angular</h4>
-            <p>
-                AngularJS is a toolset for building the framework most suited to your application development.
-            </p>
+<div class="container-fluid">
+    <div class="row marketing music-box">
+        <div class="music" ng-repeat="solo in solos">
+            <div class="music-content">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p class="number">{{solo.no}}</p>
+                    </div>
+                    <div class="col-sm-7">
+                        <h4>{{solo.artist}}</h4>
+                        <h5>{{solo.song}}</h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <img ng-src="{{solo.image}}" class="thumbnail"/>
+                        <caption>{{solo.guitarBy}}</caption>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
         </div>
     </div>
 </div>

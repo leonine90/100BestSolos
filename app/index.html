@@ -26,22 +26,40 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <audio class="sixth" xmlns="http://www.w3.org/1999/xhtml">
+        <source src="media/6th.mp3" type="audio/mpeg" />
+    </audio>
+    <audio class="fifth" xmlns="http://www.w3.org/1999/xhtml">
+        <source src="media/5th.mp3" type="audio/mpeg" />
+    </audio>
+    <audio class="fourth" xmlns="http://www.w3.org/1999/xhtml">
+        <source src="media/4th.mp3" type="audio/mpeg" />
+    </audio>
+    <audio class="third" xmlns="http://www.w3.org/1999/xhtml">
+        <source src="media/3rd.mp3" type="audio/mpeg" />
+    </audio>
+    <audio class="second" xmlns="http://www.w3.org/1999/xhtml">
+        <source src="media/2nd.mp3" type="audio/mpeg" />
+    </audio>
+    <audio class="first" xmlns="http://www.w3.org/1999/xhtml">
+        <source src="media/1st.mp3" type="audio/mpeg" />
+    </audio>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4 guitar">
-                <svg class="displayed-guitar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-20 0 250 1200">
+            <aside class="col-sm-4 guitar">
+                <svg class="displayed-guitar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-20 0 270 1000">
                     <g transform="translate(-600,-80) scale(1.7)" class="guitar-part">
                         <path d="M392.78,247.284l0.113-8.474c0.238-17.598-21.212-23.899-21.796-40.267l-4.099-114.681c-1.423-39.81,94.416-40.098,92.437,0
 		l-4.101,114.681c-0.585,16.364-22.006,21.703-21.794,39.297l0.113,9.444l-19.173,21.193L392.78,247.284z" />
                         <polygon points="
 		377.922,723.263 448.508,723.263 433.653,247.284 392.78,247.284 	" />
                         <g class="strings">
-                            <line x1="380.922" y1="923.263" x2="397.78" y2="247.284" />
-                            <line style="stroke-width:3;" x1="393.922" y1="923.263" x2="404.78" y2="247.284" />
-                            <line style="stroke-width:2.5;" x1="406.922" y1="923.263" x2="411.78" y2="247.284" />
-                            <line style="stroke-width:2;" x1="419.922" y1="923.263" x2="418.78" y2="247.284" />
-                            <line style="stroke-width:1.5;" x1="433.922" y1="923.263" x2="425.78" y2="247.284" />
-                            <line style="stroke-width:1;" x1="446.922" y1="923.263" x2="430.78" y2="247.284" />
+                            <line x1="380.922" y1="923.263" x2="397.78" y2="247.284" onclick="try { $('.sixth').currentTime=0; } catch(e) {} $('.sixth').play()" />
+                            <line style="stroke-width:3;" x1="393.922" y1="923.263" x2="404.78" y2="247.284" onclick="try { $('.fifth').currentTime=0; } catch(e) {} $('.fifth').play()" />
+                            <line style="stroke-width:2.5;" x1="406.922" y1="923.263" x2="411.78" y2="247.284" onclick="try { $('.fourth').currentTime=0; } catch(e) {} $('.fourth').play()" />
+                            <line style="stroke-width:2;" x1="419.922" y1="923.263" x2="418.78" y2="247.284" onclick="try { $('.third').currentTime=0; } catch(e) {} $('.third').play()" />
+                            <line style="stroke-width:1.5;" x1="433.922" y1="923.263" x2="425.78" y2="247.284" onclick="try { $('.second').currentTime=0; } catch(e) {} $('.second').play()" />
+                            <line style="stroke-width:1;" x1="446.922" y1="923.263" x2="430.78" y2="247.284" onclick="try { $('.first').currentTime=0; } catch(e) {} $('.first').play()" />
                         </g>
                         <path d="M414.988,1094.052c-117.035,0-203.922-44.521-203.922-148.999c0-104.485,70.042-145.364,70.042-178.983
 		c0-33.618-30.144-93.578-7.091-146.271c23.052-52.696,115.261-55.422,139.2-55.422c23.935,0,116.146,2.727,139.197,55.422
@@ -66,7 +84,7 @@
                         <rect x="372.444" y="924.263" width="81.542" height="10" />
                     </g>
                     <g class="logo">
-                        <a href="#/" class="hvr-grow">
+                        <a href="#/" class="hvr-grow" style="outline:0;" tabindex="-1">
                             <text transform='translate(100,100)'>100</text>
                             <text transform='translate(100,150)'>Guitar</text>
                             <text transform='translate(100,200)'>Solos</text>
@@ -74,16 +92,25 @@
                     </g>
                 </svg>
 
-            </div>
-            <div class="col-sm-8 pull-right">
+            </aside>
+            <main class="col-xs-12 col-sm-8">
                 <header class="header">
                     <nav class="navbar navbar-default my-nav" role="navigation">
                         <div class="container">
-                            <ul class="nav navbar-nav pull-right">
-                                <li><a href="#/" class="hvr-sink">تماس با ما</a></li>
-                                <li><a ng-href="#/about" class="hvr-sink">درباره ما</a></li>
-                                <li><a ng-href="#/" class="hvr-sink">خانه</a></li>
-                            </ul>
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle icon-color" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav navbar-right flex-container">
+                                    <li><a href="#/" class="hvr-sink flex-item">تماس با ما</a></li>
+                                    <li><a ng-href="#/about" class="hvr-sink flex-item">درباره ما</a></li>
+                                    <li><a ng-href="#/" class="hvr-sink flex-item">خانه</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
                 </header>
@@ -91,14 +118,13 @@
                 <div class="container">
                     <div ng-view=""></div>
                 </div>
-
-                <div class="footer">
-                    <div class="container">
-                        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-                    </div>
-                </div>
-            </div>
+            </main>
         </div>
+		<footer class="footer">
+			<div class="container">
+				<p><span class="glyphicon glyphicon-heart"></span>Leonine90<span class="glyphicon glyphicon-heart"></span></p>
+			</div>
+        </footer>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -125,8 +151,15 @@
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script>
+        function $(sel) {
+            return document.querySelector(sel);
+        }
+    </script>
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/services/solos.js"></script>
+    
     <!-- endbuild -->
 </body>
 
