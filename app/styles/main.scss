@@ -20,6 +20,7 @@ $black:#00080b;
 $firstColor: #e34d4c;
 $secondColor: #1875ff;
 $thirdColor: #2f3744;
+$darkerFirst: #c13b2a;
 $border: 4px solid $firstColor;
 $borderVisited: 4px solid $secondColor;
 @mixin border($border) {
@@ -165,12 +166,6 @@ a{
 }
 
 @media screen and (max-width: 768px) {
-    .guitar {
-        display: none;
-    }
-    .jumbotron {
-        display: none;
-    }
     .my-nav {
         a {
             transform: none;
@@ -198,15 +193,9 @@ a{
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
-    .thumbnail {
-	   display: none;
-    }
 }
 
-.displayed-guitar {
-    height: auto;
-    width: 100%;
-}
+
 
 .logo {
     cursor: pointer;
@@ -225,9 +214,12 @@ a{
         }
     }
 }
-
-.guitar {
+.displayed-guitar {
     height: auto;
+    width: 100%;
+}
+.guitar {
+    height: 70%;
     padding-left: 0;
 }
 
@@ -240,7 +232,7 @@ a{
 
 .strings {
     cursor: pointer;
-    stroke: #c13b2a;
+    stroke: $darkerFirst;
     transition: all 0.15s ease-in-out;
     line {
         margin-left: 2px;
@@ -285,6 +277,10 @@ a{
     font-size:2.5em;
 	font-weight: 800;
     padding-top:20px;
+    @media screen and (max-width: 768px){
+        font-size:2em;
+        padding-top:10px;
+    } 
 }
 
 .navbar-default {
