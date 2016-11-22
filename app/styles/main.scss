@@ -284,7 +284,7 @@ nav,.navbar,.navbar-default, .my-nav{
     .music-content {
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 10px;
+        margin-top: 30px;
         text-align: center;
         
     }
@@ -382,4 +382,16 @@ nav,.navbar,.navbar-default, .my-nav{
 	height: 100px;
     margin-bottom: 5px;
     width: 100px;
+}
+
+.play-pause{
+    fill: $firstColor;
+    height:auto;
+    margin-top: 10px;
+    width:12%;
+    a:hover,
+    a:focus,
+    a:active{
+        fill: $secondColor;
+    }
 }
