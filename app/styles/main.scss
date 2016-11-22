@@ -51,7 +51,18 @@ a{
                 color:$thirdColor;
                 text-decoration: none;
             }
-        }
+ }
+nav,.navbar,.navbar-default, .my-nav{
+    @media screen and (max-width:768px){
+        margin-bottom: 0;
+    }
+}
+.navbar-nav{
+    @media screen and (max-width:768px){
+        margin-bottom:4px;
+    }
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -60,13 +71,16 @@ a{
 .footer {
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (max-width:768px){
+        margin-top: 0;
+    }
 }
 
 
 /* Custom page header */
 
 .header {
-    margin-bottom: 10px;
+    
     /* Make the masthead heading the same height as the sigation */
     h3 {
         margin-top: 0;
@@ -250,6 +264,9 @@ a{
     color: $thirdColor;
     font-family: gothic;
     font-weight: bold;
+    @media screen and (max-width:768px){
+        margin-top: 0;
+    }
 }
 
 .music {
