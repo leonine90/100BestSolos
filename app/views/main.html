@@ -1,6 +1,8 @@
 <div class="container-fluid">
+
     <div class="row marketing music-box">
-        <div class="music" ng-repeat="solo in solos|limitTo:5">
+	<perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="200">
+        <div class="music" ng-repeat="solo in solos">
             <div class="music-content">
                 <div class="row">
                     <div class="col-xs-3">
@@ -39,5 +41,7 @@
                 </div>
             </div>
         </div>
+		</perfect-scrollbar>
     </div>
+	
 </div>

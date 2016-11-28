@@ -11,7 +11,8 @@
 angular
   .module('100bestsolosApp', [
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+	'perfect_scrollbar'
   ])
   .config(function ($routeProvider) {
     $routeProvider

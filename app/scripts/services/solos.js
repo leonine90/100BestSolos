@@ -802,7 +802,7 @@ angular.module('100bestsolosApp')
                 image:"",
                 no: 100,
                 song:"Three Days",
-                src:"media/Solos/100.mp3"
+                src:"media/Solos/100a.mp3"
             }
             
             

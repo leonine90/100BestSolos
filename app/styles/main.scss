@@ -264,6 +264,7 @@ nav,.navbar,.navbar-default, .my-nav{
     color: $thirdColor;
     font-family: gothic;
     font-weight: bold;
+	height: 1200px;
     @media screen and (max-width:768px){
         margin-top: 0;
     }
@@ -397,4 +398,11 @@ nav,.navbar,.navbar-default, .my-nav{
 }
 #song{
     margin-top:10px
+}
+
+.scroller {
+    
+    height: 1150px;
+    overflow-y: hidden;
+    position: relative;
 }
