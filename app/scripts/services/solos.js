@@ -22,7 +22,7 @@ angular.module('100bestsolosApp')
             },
             {
                 artist: "Lynyrd Skynyrd",
-                guitarBy:"Allen Collins",
+                guitarBy:"Collins/Rossington",
                 image:"",
                 no: 3,
                 song:"Free Bird",
@@ -109,8 +109,8 @@ angular.module('100bestsolosApp')
                 src:"media/Solos/13.mp3"
             },
             {
-                artist: "Derek And The Dominos - ",
-                guitarBy:"Eric Clapton",
+                artist: "Derek And The Dominos",
+                guitarBy:"Clapton/Allman",
                 image:"",
                 no: 14,
                 song:"Layla",
@@ -198,7 +198,7 @@ angular.module('100bestsolosApp')
             },
             {
                 artist: "Jethro Tull",
-                guitarBy:"Ian Anderson",
+                guitarBy:"Martin Barre",
                 image:"",
                 no: 25,
                 song:"Aqualung",
@@ -318,7 +318,7 @@ angular.module('100bestsolosApp')
             },
             {
                 artist: "Steely Dan",
-                guitarBy:"Steely Dan",
+                guitarBy:"Elliot Randall",
                 image:"",
                 no: 40,
                 song:"Reelin' In the Years",
@@ -334,7 +334,7 @@ angular.module('100bestsolosApp')
             },
             {
                 artist: "The Beatles",
-                guitarBy:"George Harrison",
+                guitarBy:"Eric Clapton",
                 image:"",
                 no: 42,
                 song:"While My Guitar Gently Weeps",
@@ -403,7 +403,409 @@ angular.module('100bestsolosApp')
                 no: 50,
                 song:"Shock Me",
                 src:"media/Solos/50.mp3"
+            },
+            {
+                artist: "Metallica",
+                guitarBy:"Kirk Hammett",
+                image:"",
+                no: 51,
+                song:"Master of Puppets",
+                src:"media/Solos/51.mp3"
+            },
+            {
+                artist: "Jimi Hendrix",
+                guitarBy:"Jimi Hendrix",
+                image:"",
+                no: 52,
+                song:"Star-Spangled Banner",
+                src:"media/Solos/52.mp3"
+            },
+            {
+                artist: "Led Zeppelin",
+                guitarBy:"Jimmy Page",
+                image:"",
+                no: 53,
+                song:"Since I've Been Loving You ",
+                src:"media/Solos/53.mp3"
+            },
+            {
+                artist: "Smashing Pumpkins",
+                guitarBy:"Billy Corgan",
+                image:"",
+                no: 54,
+                song:"Geek U.S.A.",
+                src:"media/Solos/54.mp3"
+            },
+            {
+                artist: "Joe Satriani",
+                guitarBy:"Joe Satriani",
+                image:"",
+                no: 55,
+                song:"Satch Boogie",
+                src:"media/Solos/55.mp3"
+            },
+            {
+                artist: "Black Sabbath",
+                guitarBy:"Tony Iommi",
+                image:"",
+                no: 56,
+                song:"War Pigs",
+                src:"media/Solos/56.mp3"
+            },
+            {
+                artist: "Pantera",
+                guitarBy:"Dimebag Darrell",
+                image:"",
+                no: 57,
+                song:"Walk",
+                src:"media/Solos/57.mp3"
+            },
+            {
+                artist: "Eric Clapton",
+                guitarBy:"Eric Clapton",
+                image:"",
+                no: 58,
+                song:"Cocaine",
+                src:"media/Solos/58.mp3"
+            },
+            {
+                artist: "The Kinks",
+                guitarBy:"Dave Davies",
+                image:"",
+                no: 59,
+                song:"You Really Got Me",
+                src:"media/Solos/59.mp3"
+            },
+            {
+                artist: "Frank Zappa",
+                guitarBy:"Frank Zappa",
+                image:"",
+                no: 60,
+                song:"Zoot Allures",
+                src:"media/Solos/60.mp3"
+            },
+            {
+                artist: "Ozzy Osbourne",
+                guitarBy:"Zakk Wylde",
+                image:"",
+                no: 61,
+                song:"No More Tears",
+                src:"media/Solos/61.mp3"
+            },
+            {
+                artist: "Pink Floyd",
+                guitarBy:"David Gilmore",
+                image:"",
+                no: 62,
+                song:"Money",
+                src:"media/Solos/62.mp3"
+            },
+            {
+                artist: "Soundgarden",
+                guitarBy:"Kim Thayil",
+                image:"",
+                no: 63,
+                song:"Black Hole Sun",
+                src:"media/Solos/63a.mp3"
+            },
+            {
+                artist: "Prince",
+                guitarBy:"Dez Dickerson",
+                image:"",
+                no: 64,
+                song:"Little Red Corvette",
+                src:"media/Solos/64.mp3"
+            },
+            {
+                artist: "Nirvana",
+                guitarBy:"Kurt Cobain",
+                image:"",
+                no: 65,
+                song:"In Bloom",
+                src:"media/Solos/65a.mp3"
+            },
+            {
+                artist: "The Allman Brothers",
+                guitarBy:"Allman/Betts",
+                image:"",
+                no: 66,
+                song:"Blue Sky",
+                src:"media/Solos/66.mp3"
+            },
+            {
+                artist: "Michael Jackson",
+                guitarBy:"Eddie Van Halen",
+                image:"",
+                no: 67,
+                song:"Beat It",
+                src:"media/Solos/67.mp3"
+            },
+            {
+                artist: "The Who",
+                guitarBy: "Steve Howe",
+                image:"",
+                no: 68,
+                song:"Starship Trooper",
+                src:"media/Solos/68.mp3"
+            },
+            {
+                artist: "The Beatles",
+                guitarBy: "George Harrison",
+                image:"",
+                no: 69,
+                song:"And Your Bird Can Sing",
+                src:"media/Solos/69.mp3"
+            },
+            {
+                artist: "Jimi Hendrix Experience",
+                guitarBy: "Jimi Hendrix",
+                image:"",
+                no: 70,
+                song:"Purple Haze",
+                src:"media/Solos/70.mp3"
+            },
+            {
+                artist: "ّFunkadelic",
+                guitarBy: "Eddie Hazel",
+                image:"",
+                no: 71,
+                song:"Maggot Brain",
+                src:"media/Solos/71.mp3"
+            },
+            {
+                artist: "Aerosmith",
+                guitarBy: "Joe Perry",
+                image:"",
+                no: 72,
+                song:"Walk This Way",
+                src:"media/Solos/72.mp3"
+            },
+            {
+                artist: "Phish",
+                guitarBy: "Trey Anastasio",
+                image:"",
+                no: 73,
+                song:"Stash",
+                src:"media/Solos/73.mp3"
+            },
+            {
+                artist: "Deep Purple",
+                guitarBy: "Ritchie Blackmore",
+                image:"",
+                no: 74,
+                song:"Lazy",
+                src:"media/Solos/74.mp3"
+            },
+            {
+                artist: "The Who",
+                guitarBy: "Pete Townsend",
+                image:"",
+                no: 75,
+                song:"Won't Get Fooled Again",
+                src:"media/Solos/75.mp3"
+            },
+            {
+                artist: "Neil Young and Crazy Horse",
+                guitarBy: "Neil Young",
+                image:"",
+                no: 76,
+                song:"Cinnamon Girl",
+                src:"media/Solos/76.mp3"
+            },
+            {
+                artist: "Alice in Chains",
+                guitarBy: "Jerry Cantrell",
+                image:"",
+                no: 77,
+                song:"Man in the Box",
+                src:"media/Solos/75.mp3"
+            },
+            {
+                artist: "Grateful Dead",
+                guitarBy: "Jerry Garcia",
+                image:"",
+                no: 78,
+                song:"Truckin'",
+                src:"media/Solos/78.mp3"
+            },
+            {
+                artist: "Van Halen",
+                guitarBy: "Eddie Van Halen",
+                image:"",
+                no: 79,
+                song:"Mean Street",
+                src:"media/Solos/79.mp3"
+            },
+            {
+                artist: "AC/DC",
+                guitarBy: "Angus Young",
+                image:"",
+                no: 80,
+                song:"You Shook Me All Night Long",
+                src:"media/Solos/80.mp3"
+            },
+            {
+                artist: "The Velvet Underground",
+                guitarBy: "Hunter/Wagner",
+                image:"",
+                no: 81,
+                song:"Sweet Jane",
+                src:"media/Solos/81.mp3"
+            },
+            {
+                artist: "King Crimson",
+                guitarBy: "Robert Fripp",
+                image:"",
+                no: 82,
+                song:"21st Century Schizoid Man",
+                src:"media/Solos/82.mp3"
+            },
+            {
+                artist: "Stevie Ray Vaughan",
+                guitarBy: "Stevie Ray Vaughan",
+                image:"",
+                no: 83,
+                song:"Scuttle Buttin'",
+                src:"media/Solos/80.mp3"
+            },
+            {
+                artist: "Sublime",
+                guitarBy: "Brad Nowell",
+                image:"",
+                no: 84,
+                song:"Santeria",
+                src:"media/Solos/84a.mp3"
+            },
+            {
+                artist: "David Bowie",
+                guitarBy: "Mick Ronson",
+                image:"",
+                no: 85,
+                song:"Moonage Daydream",
+                src:"media/Solos/85.mp3"
+            },
+            {
+                artist: "The Allman Brothers",
+                guitarBy: "Allman/Betts",
+                image:"",
+                no: 86,
+                song:"Whipping Post",
+                src:"media/Solos/86.mp3"
+            },
+            {
+                artist: "Living Colour",
+                guitarBy: "Vernon Reid",
+                image:"",
+                no: 87,
+                song:"Cult of Personality",
+                src:"media/Solos/87a.mp3"
+            },
+            {
+                artist: "Steely Dan",
+                guitarBy: "Larry Carlton",
+                image:"",
+                no: 88,
+                song:"Kid Charlemagne",
+                src:"media/Solos/88.mp3"
+            },
+            {
+                artist: "Rage Against the Machine",
+                guitarBy: "Tom Morello",
+                image:"",
+                no: 89,
+                song:"Killing in the Name",
+                src:"media/Solos/89.mp3"
+            },
+            {
+                artist: "Eric Clapton",
+                guitarBy: "Eric Clapton",
+                image:"",
+                no: 90,
+                song:"Let It Rain",
+                src:"media/Solos/90.mp3"
+            },
+            {
+                artist: "Creedence Clearwater Revival",
+                guitarBy: "John Fogerty",
+                image:"",
+                no: 91,
+                song:"I Heard It Though the Grapevine",
+                src:"media/Solos/91.mp3"
+            },
+            {
+                artist: "Stray Cats",
+                guitarBy: "Brian Setzer",
+                image:"",
+                no: 92,
+                song:"Stray Cat Strut",
+                src:"media/Solos/92.mp3"
+            },
+            {
+                artist: "The Doors",
+                guitarBy: "Robby Krieger",
+                image:"",
+                no: 93,
+                song:"The End",
+                src:"media/Solos/93.mp3"
+            },
+            {
+                artist: "Rush",
+                guitarBy: "Alex Lifeson",
+                image:"",
+                no: 94,
+                song:"Working Man",
+                src:"media/Solos/94.mp3"
+            },
+            {
+                artist: "Pearl Jam",
+                guitarBy: "Mike McCready",
+                image:"",
+                no: 95,
+                song:"Yellow Ledbetter",
+                src:"media/Solos/95.mp3"
+            },
+            {
+                artist: "The Rolling Stones",
+                guitarBy: "Keith Richards",
+                image:"",
+                no: 96,
+                song:"Honky Tonk Women",
+                src:"media/Solos/96.mp3"
+            },
+            {
+                artist: "Smashing Pumpkins",
+                guitarBy: "Billy Corgan",
+                image:"",
+                no: 97,
+                song:"Cherub Rock",
+                src:"media/Solos/97a.mp3"
+            },
+            {
+                artist: "Dream Theater",
+                guitarBy: "John Petrucci",
+                image:"",
+                no: 98,
+                song:"Under a Glass Moon",
+                src:"media/Solos/98.mp3"
+            },
+            {
+                artist: "Jeff Beck",
+                guitarBy: "Jeff Beck",
+                image:"",
+                no: 99,
+                song:"Cause We've Ended as Lovers",
+                src:"media/Solos/99.mp3"
+            },
+            {
+                artist: "Jane's Addiction",
+                guitarBy: "Dave Navarro",
+                image:"",
+                no: 100,
+                song:"Three Days",
+                src:"media/Solos/100.mp3"
             }
+            
+            
         ];
     
         soloFac.getSolos = function(){
