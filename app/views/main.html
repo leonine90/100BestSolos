@@ -1,8 +1,12 @@
 <div class="container-fluid">
-
+    <form>
+        <div class="form-group-lg search-box">
+            <input class="form-control form-warning" type="search" id="search" name="search" placeholder="براساس نام قطعه، گیتاریست، بند یا شماره جستجو کنید" ng-model="filterText">
+        </div>
+    </form>
     <div class="row marketing music-box">
-        <perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="200">
-            <div class="music" ng-repeat="solo in solos">
+        <perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="2" min-scrollbar-length="200">
+            <div class="music" ng-repeat="solo in solos|filter:filterText">
                 <div class="music-content">
                     <div class="row">
                         <div class="col-xs-3">
@@ -18,13 +22,13 @@
                         </div>
                         <div class="col-xs-3 play-pause hidden-xs hidden-sm hidden-md hidden-lg">
                             <a>
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 200 200" onclick="document.getElementById('song').play()">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 200 200" ng-click="playSolo()">
                                     <rect xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="200" height="200" />
                                     <polygon xmlns="http://www.w3.org/2000/svg" points="40,25 175,100 40,175" fill="white" />
                                 </svg>
                             </a>
                             <a>
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 200 200" onclick="document.getElementById('song').pause()">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 200 200" ng-click="pauseSolo()">
                                     <rect xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="200" height="200" />
                                     <rect xmlns="http://www.w3.org/2000/svg" x="25" y="25" width="60" height="150" fill="white" />
                                     <rect xmlns="http://www.w3.org/2000/svg" x="112.5" y="25" width="60" height="150" fill="white" />

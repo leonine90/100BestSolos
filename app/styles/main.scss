@@ -52,6 +52,9 @@ a{
                 text-decoration: none;
             }
  }
+input{
+    padding: 30px 30px;
+}
 nav,.navbar,.navbar-default, .my-nav{
     @media screen and (max-width:768px){
         margin-bottom: 0;
@@ -212,7 +215,12 @@ nav,.navbar,.navbar-default, .my-nav{
     }
 }
 
-
+.form-group-lg .form-control{
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background: $white;
+}
 
 .logo {
     cursor: pointer;
@@ -308,6 +316,15 @@ nav,.navbar,.navbar-default, .my-nav{
         font-size:2em;
         padding-top:10px;
     } 
+}
+
+.search-box {
+    @include border($border);
+    border-radius: 0;
+    font-family: gothic, iran-sans;
+    &:focus{
+        @include border($borderVisited);
+    }
 }
 
 .navbar-default {
