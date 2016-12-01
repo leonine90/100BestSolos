@@ -41,9 +41,12 @@ html {
 
 body {
     background: $white;
+    color:$thirdColor;
+    font-family: "iran-sans","gothic";
     min-width: 450px;
     padding: 0;
     padding-top: 20px;
+    text-align: right;
 }
 a{
             color:$firstColor;
@@ -84,7 +87,10 @@ nav,.navbar,.navbar-default, .my-nav{
     }
 }
 
-
+.well {
+    @include border($border);
+    background-color: $white;
+}
 /* Custom page header */
 
 .header {
@@ -387,7 +393,6 @@ nav,.navbar,.navbar-default, .my-nav{
     a {
         background-color: $firstColor;
         border-radius: 2px;
-        font-family: "iran-sans";
         font-size: 1.2em;
         text-align: center;
     }
