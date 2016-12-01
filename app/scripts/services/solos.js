@@ -10,7 +10,8 @@ angular.module('100bestsolosApp')
                 image:"images/01.jpg",
                 no: 1,
                 song:"Stairway to Heaven",
-                src:"media/Solos/01.mp3"
+                src:"media/Solos/01.mp3",
+                tags:["لد زپلین", "نردبان","بهشت","John Bonham","Robert Plant"]
             },
             {
                 artist: "Van Halen",

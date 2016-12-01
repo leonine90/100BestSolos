@@ -20,6 +20,9 @@ angular
         templateUrl: 'views/main.html',
         controller: 'SolosCtrl'
       })
+      .when('/aboutus', {
+        templateUrl: 'views/aboutus.html',
+      })
       .otherwise({
         redirectTo: '/'
       });
