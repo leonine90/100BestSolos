@@ -6,7 +6,7 @@
     </form>
     <div class="row marketing music-box">
         <perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="2" min-scrollbar-length="200">
-            <div class="music" ng-repeat="solo in solos|filter:filterText">
+            <div class="music" ng-repeat="solo in solos|filter:filterText" ng-class="{'playing':($index+1)==playing,'not-playing':playing==0}">
                 <div class="music-content">
                     <div class="row">
                         <div class="col-xs-4">
@@ -23,9 +23,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-offset-3 col-sm-offset-0 col-xs-6 col-sm-4">
                             <a>
-                                <svg class="play" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 200 200" ng-click="playSolo(($index+1));">
+                                <svg class="play" ng-class="{'btn-playing':($index+1)==playing,'btn-not-playing':playing==0}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 200 200" ng-click="playSolo(($index+1));">
                                     <g>
                                         <rect xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="200" height="200" />
                                         <polygon xmlns="http://www.w3.org/2000/svg" points="40,25 175,100 40,175" fill="white" />

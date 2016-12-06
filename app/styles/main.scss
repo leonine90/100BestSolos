@@ -22,7 +22,7 @@ $secondColor: #1875ff;
 $thirdColor: #2f3744;
 $darkerFirst: #c13b2a;
 $border: 4px solid $firstColor;
-$borderVisited: 4px solid $secondColor;
+$borderVisited: 7px solid $secondColor;
 @mixin border($border) {
     border: $border;
     border-radius: 2px;
@@ -49,13 +49,13 @@ body {
     text-align: right;
 }
 a{
-            color:$firstColor;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color:$thirdColor;
-                text-decoration: none;
-            }
+    color:$firstColor;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color:$thirdColor;
+        text-decoration: none;
+    }
  }
 input{
     padding: 30px 30px;
@@ -225,6 +225,9 @@ nav,.navbar,.navbar-default, .my-nav{
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
+    .pause{
+        padding-top:30px;
+    }
 }
 
 .form-group-lg .form-control{
@@ -304,13 +307,15 @@ nav,.navbar,.navbar-default, .my-nav{
 .music {
     @include border($border);
     background: $white;
+    box-sizing: border-box;
     height: 12em;
     margin: 35px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.05s ease;
     width: auto;
     &:hover {
         @include border($borderVisited);
-        box-shadow: 0 0 20px $secondColor;
+        /*box-shadow: 0 0 20px $secondColor;
+        will-change: box-shadow;*/
     }
     .music-content {
         margin-left: 10px;
@@ -438,6 +443,12 @@ nav,.navbar,.navbar-default, .my-nav{
 .play{
     @extend .pause;
 }
+.btn-playing{
+    fill: $secondColor;
+}
+ .btn-not-playing{
+    fill: $firstColor;
+}
 
 .scroller {
     
@@ -452,10 +463,13 @@ nav,.navbar,.navbar-default, .my-nav{
     animation: fadeIn 0.5s ease-in forwards, slideDown 0.5s ease-in;
 }
 
-.stop-all {
-	position: fixed;
-    display: block;
-    width: 100%;
+.playing {
+    @include border($borderVisited);
+    /*box-shadow: 0 0 20px $secondColor;*/
+}
+.not-playing{
+    @include border($border);
+    /* box-shadow: none; */
 }
 @keyframes fadeIn{
     from{
