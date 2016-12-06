@@ -5,18 +5,14 @@ angular.module('100bestsolosApp')
   .controller('SolosCtrl', ['$scope','solosFactory', function ($scope,solosFactory) {
       
       $scope.solos = solosFactory.getSolos();
-      
-      $scope.playSolo = function(){
-          document.getElementById('song').play();
-      }
-      $scope.pauseSolo = function(){
-          document.getElementById('song').pause();
-      }
-      $scope.playNg2 = function () {
-         var audio = document.getElementById("song");
-         audio.load();
-         audio.play();
+	  $scope.number = ["1","2","3","4","5"];
+	  $scope.playSolo = function(i){
+			document.getElementById(i).play();
+	  };
+      $scope.pauseSolo = function(i){
+			document.getElementById(i).pause();
       };
+	  
       
       $scope.filterText = '';
   }]);

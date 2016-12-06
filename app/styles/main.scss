@@ -328,7 +328,7 @@ nav,.navbar,.navbar-default, .my-nav{
 .song-number {
     font-size:2.5em;
 	font-weight: 800;
-    padding-top:20px;
+    padding-top:0;
     @media screen and (max-width: 768px){
         font-size:2em;
         padding-top:10px;
@@ -425,22 +425,18 @@ nav,.navbar,.navbar-default, .my-nav{
     width: 100px;
 }
 
-.play-pause{
+.pause{
     fill: $firstColor;
-    height:auto;
-    margin-top: 10px;
-    width:12%;
-    a:hover,
-    a:focus,
-    a:active{
+    transition: all 0.3s ease-in-out;
+    width:25%;
+    &:hover,
+    &:focus,
+    &:active{
         fill: $secondColor;
     }
 }
-#song{
-    margin-top:20px;
-    @media screen and (min-width:768){
-        margin-left:-7px;        
-    }
+.play{
+    @extend .pause;
 }
 
 .scroller {
